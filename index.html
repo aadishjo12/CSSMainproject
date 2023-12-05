@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>APPLE STORE</title>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="lo.png" alt="Your Logo" class="logo">
+            </div>
+            <div class="header-content">
+                <h1>APPLE STORE</h1>
+               
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="iph.jpg" alt="iPhone 15 Pro Max Image 1" class="product-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="iphone 151.jpg" alt="iPhone 15 Pro Max Image 2" class="product-image">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+        <p>Key Features:</p>
+        <ul>
+            <li>6.7-inch Super Retina XDR display</li>
+            <li>Quad-camera system with 108MP sensor</li>
+            <li>5G capable for lightning-fast connectivity</li>
+            <li>Face ID with advanced facial recognition</li>
+        </ul>
+        
+    </main>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .rotation-container {
+            perspective: 1000px;
+            margin: 50px;
+        }
+
+        .rotation-image {
+            width: 300px; /* Adjust the size as needed */
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: rotateImage 5s infinite linear;
+        }
+
+        @keyframes rotateImage {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotation-container">
+        <img src="II.jpg" alt="iPhone 15" class="rotation-image">
+    </div>
+    <a href="product.html" class="cta-button">IPHONE 15 PRO MAX</a>
+    <footer>
+        <p>&copy; 2023 iPhone 15 Pro Max. All rights reserved.</p>
+    </footer>
+
+    <script src="slideshow.js"></script>
+</body>
+
+</html>
